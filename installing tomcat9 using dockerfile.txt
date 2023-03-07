@@ -1,0 +1,30 @@
+FROM ubuntu
+RUN apt-get update -y
+RUN apt-get install openjdk-11-jdk -y && apt install wget -y
+RUN mkdir /opt/tomcat
+WORKDIR /opt/tomcat
+RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.72/bin/apache-tomcat-9.0.72.tar.gz
+RUN tar -zxvf apache-tomcat-9.0.72.tar.gz
+CMD ["/opt/tomcat/apache-tomcat-9.0.72/bin/catalina.sh","run"]
+
+
+
+==================================================================================================
+
+
+
+
+
+ apt update
+    2  apt-get install docker.io
+    3  systemctl start docker
+    4  vi Dockerfile
+    5  docker build -t arjunreddypreethigone:2.3
+    6  docker build -t arjunreddypreethigone:2.3 .
+    7  docker run -it --name coke -d -p 8080:8080 arjunreddypret
+    8  docker images
+    9  docker build -t mango .
+   10  docker images
+   11  docker run -it -d --name kiwi -p 8080:8080 mango
+   12  history
+   13  vi Dockerfile
