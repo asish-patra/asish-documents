@@ -1,0 +1,27 @@
+1  apt update
+    2  apt install default-jdk
+    3  apt install wget -y
+    4  ll
+    5  java --version
+    6  cd /opt
+    7  ll
+    8  cd /tomcat
+    9  cd
+   10  mkdir /opt/tomcat
+   11  cd /opt/tomcat
+   12  ll
+   13  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.72/bin/apache-tomcat-9.0.72.tar.gz
+   14  tar -zxvf apache-tomcat-9.0.72.tar.gz
+   15  systemctl status tomcat
+   16  history
+   17  cd
+   18  apt install tomcat9 -y
+   19  apt install tomcat9-examples tomcat9-docs tomcat9-admin
+   20  cd /etc/tomcat
+   21  cd /etc/tomcat9
+   22  ll
+   23  vi tomcat-users.xml 
+   24  apt install vim
+   25  vi tomcat-users.xml 
+   26  systemctl restart tomcat9
+   27  history
